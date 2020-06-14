@@ -1,0 +1,33 @@
+body { 
+text-align: center;
+color: #fff;
+font-family: 'Josefin Sans', sans-serif;
+background-color: #000;
+font-size: 24px;
+line-height: 1.2;
+
+}
+
+.city{
+  color: #fff;
+  margin-top: 60px;
+}
+.temp{
+
+  font-size: 60px;
+}
+.header{
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  padding: 0px;
+  background-color: #efefef;
+  text-align: center;
+}
+#imgthumb{
+  max-width: 128px;
+}
+.humi_wind>.wi{
+  color: #3E87F3;
+}
