@@ -185,6 +185,7 @@ $.ajax({
  //document.getElementById("display").innerHTML += "Places: " +places[i] + "<br/>";
 
   $('.city').html("<i class='material-icons'>room</i> "+city+" &#183; "+region);
+  $('.high_low').html(highlow);
 
    $('.panel-body').append("<div class='forecast'></div>");
 
