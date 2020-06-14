@@ -145,7 +145,7 @@ transform: translate(-50%, -50%);
   font-family: 'Josefin Sans', sans-serif;
 }
 .container{
-  line-height: 1.4;
+  line-height: 1.2;
   font-size: 28px;
 }
 .highcharts-credits,.highcharts-legend{
