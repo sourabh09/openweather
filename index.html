@@ -4,22 +4,49 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Damion|Asap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.teal-pink.min.css">
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue-pink.min.css">
+  <script type="text/javascript" src="https://sourabh09.github.io/mdlweather/crypto.js"></script>
   <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="script.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
 </head>
 <body>
- 
-	
+    <div class="dummy">
+          <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
+    </div>
+<div class="container">
 <div class="city"></div>
-<div class="currently" ></div>
 <div class="thumb"><img id="imgthumb"src=""></div>
 <div class="temp"></div>
-<div class="humi_wind"></div>
+<div class="currently"></div>
 <div class="high_low"></div>
+<div class="humi_wind"></div>
+
+</div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                       
+                    Next 9 Days
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body"></div>
+            </div>
+        </div>
+      </div>
+    <div id="view"></div>
+
 </body>
 </html>
