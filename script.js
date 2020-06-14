@@ -40,7 +40,7 @@ $( document ).ready(function() {
 function abc(){
  var place =  fetched_location;
 $.ajax({
-      url: "http://api.openweathermap.org/data/2.5/weather?appid=d320935067c3352386361492f27995eb&units=metric&q="+place,
+      url: "https://api.openweathermap.org/data/2.5/weather?appid=d320935067c3352386361492f27995eb&units=metric&q="+place,
       dataType: "jsonp",
 
                 success: function(data){
