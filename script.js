@@ -4,6 +4,7 @@ var fetched_location = "";
 var categories1=[];
 var forecast_high=[];
 var forecast_low=[];
+var highest_for_graph="";
 
 
 $( document ).ready(function() {
@@ -213,12 +214,27 @@ $.ajax({
   $('#splashscreen').fadeOut('fast');
   $('#view').fadeIn();
   $('#accordion').fadeIn();
-  makegraph()
+  highest_Temp();
 
     }
   
 });
 
+}
+
+function highest_Temp(){
+  var array = forecast_high ;
+var largest= 0;
+
+for (i=0; i<=largest;i++){
+    if (array[i]>largest) {
+        var largest=array[i];
+    }
+}
+
+//console.log(largest);
+highest_for_graph = largest;
+makegraph();
 }
 
 function makegraph(){
@@ -269,7 +285,7 @@ $(function() {
             text : ''
           },
          
-          max : hightemp
+          max : highest_for_graph
         },
         tooltip : {
           formatter : function () {
