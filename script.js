@@ -27,7 +27,13 @@ $( document ).ready(function() {
                 //console.log(data.results[6].formatted_address);
                 
                 //fetched_location = data.results[4].formatted_address;
-                fetched_location = data.results[2].formatted_address;
+                //fetched_location = data.results[2].formatted_address;
+                let str = data.plus_code.compound_code;
+                str = str.split(" ");
+                str.shift();
+                str = str.join(" ");
+                //alert(str);
+                fetched_location = str;
                 
                 //alert(fetched_location);
                 abc();
