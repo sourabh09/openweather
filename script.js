@@ -23,11 +23,11 @@ $( document ).ready(function() {
             success: function(data) {
 
                 console.log(data);
-                console.log(data.results[2].formatted_address);
-                console.log(data.results[6].formatted_address);
+                //console.log(data.results[2].formatted_address);
+                //console.log(data.results[6].formatted_address);
                 
                 //fetched_location = data.results[4].formatted_address;
-                fetched_location = data.results[5].formatted_address;
+                fetched_location = data.results[2].formatted_address;
                 
                 //alert(fetched_location);
                 abc();
